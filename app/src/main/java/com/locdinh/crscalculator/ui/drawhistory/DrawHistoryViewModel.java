@@ -1,16 +1,16 @@
-package com.locdinh.crscalculator.ui.slideshow;
+package com.locdinh.crscalculator.ui.drawhistory;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class DrawHistoryViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public DrawHistoryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is draw history fragment");
     }
 
     public LiveData<String> getText() {
