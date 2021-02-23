@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.locdinh.crscalculator.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_draw_history"
+        android:name="com.locdinh.crscalculator.ui.drawhistory.DrawHistoryFragment"
+        android:label="@string/menu_draw_history"
+        tools:layout="@layout/fragment_drawhistory" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.locdinh.crscalculator.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_about"
+        android:name="com.locdinh.crscalculator.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>
