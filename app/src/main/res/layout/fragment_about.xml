@@ -11,8 +11,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/about_student_info_layout"
-        app:layout_constraintWidth_percent="0.65"
-        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintHeight_percent="0.37"
         app:layout_constraintBottom_toTopOf="@id/text_about"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,25 +26,52 @@
             android:contentDescription="@string/logo_desc"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             app:layout_constraintBottom_toTopOf="@id/iv_humber_logo2"
-            app:layout_constraintEnd_toStartOf="@id/text_student_info1"
+            app:layout_constraintEnd_toStartOf="@id/text_student_info1_college"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/student_info_layout"
             app:srcCompat="@mipmap/ic_launcher_round" />
 
         <TextView
-            android:id="@+id/text_student_info1"
+            android:id="@+id/text_student_info1_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="StudentInfo1"
-            android:textAlignment="center"
-            android:textSize="20sp"
+            android:text="@string/about_student_info_1_name"
+            android:textSize="25sp"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/iv_humber_logo1"
             app:layout_constraintTop_toTopOf="@id/student_info_layout"
-            app:layout_constraintBottom_toTopOf="@id/text_student_info2"/>
+            app:layout_constraintBottom_toTopOf="@id/text_student_info1_id"/>
+
+        <TextView
+            android:id="@+id/text_student_info1_college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/about_student_info_college"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_humber_logo1"
+            app:layout_constraintTop_toBottomOf="@id/text_student_info1_name"
+            app:layout_constraintBottom_toTopOf="@id/text_student_info1_id"/>
+
+        <TextView
+            android:id="@+id/text_student_info1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/about_student_info_1_id"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_humber_logo1"
+            app:layout_constraintTop_toBottomOf="@id/text_student_info1_college"
+            app:layout_constraintBottom_toTopOf="@id/text_student_info2_name"/>
 
         <ImageView
             android:id="@+id/iv_humber_logo2"
@@ -53,25 +80,58 @@
             android:contentDescription="@string/logo_desc"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/text_student_info2"
+            app:layout_constraintEnd_toStartOf="@id/text_student_info2_college"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_humber_logo1"
             app:srcCompat="@mipmap/ic_launcher_round" />
 
         <TextView
-            android:id="@+id/text_student_info2"
+            android:id="@+id/text_student_info2_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="8dp"
-            android:text="StudentInfo2"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/about_student_info_2_name"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/text_student_info1_id"
+            app:layout_constraintBottom_toTopOf="@id/text_student_info2_college"
             app:layout_constraintStart_toEndOf="@id/iv_humber_logo2"
-            app:layout_constraintTop_toBottomOf="@id/text_student_info1" />
+            app:layout_constraintEnd_toEndOf="parent"
+ />
+
+        <TextView
+            android:id="@+id/text_student_info2_college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/about_student_info_college"
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@id/text_student_info2_id"
+            app:layout_constraintStart_toEndOf="@id/iv_humber_logo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_student_info2_name" />
+
+        <TextView
+            android:id="@+id/text_student_info2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/about_student_info_2_id"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/text_student_info2_college"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_humber_logo2"
+            app:layout_constraintEnd_toEndOf="parent"
+ />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView

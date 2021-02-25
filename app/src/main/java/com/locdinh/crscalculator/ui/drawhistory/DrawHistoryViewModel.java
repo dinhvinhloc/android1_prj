@@ -10,7 +10,7 @@ public class DrawHistoryViewModel extends ViewModel {
 
     public DrawHistoryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is draw history fragment");
+        //mText.setValue("This is draw history fragment");
     }
 
     public LiveData<String> getText() {
