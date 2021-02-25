@@ -12,4 +12,10 @@
     <string name="menu_about">About</string>
 
     <string name="logo_desc">Humber logo</string>
+    <string name="about_desc">
+        This application is created for Winter 2021 Android1 course group project at Humber College. \n\n
+        This application helps the user to calculate the CRS (Comprehensive Ranking System) score for the Canada Express Entry profile based on the information that the users selected.\n
+        In addition, there is a Draw History category that the user can see the previous draw that the government announced.\n\n
+        Anyone who is interested in Canadian Immigration can utilize this application and infer their CRS score. However, this calculation is just for reference and cannot be a replacement for the official government source for making the calculation and cannot be utilized as the sole method for immigration guidance.
+    </string>
 </resources>
