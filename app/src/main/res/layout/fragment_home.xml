@@ -6,17 +6,179 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/text_total_score"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/text_view_circle"
+        android:gravity="center"
+        android:text="450"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_age"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Age"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/text_total_score"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_age_score"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_view_round"
+        android:text="28"
+        android:textSize="20dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_age"
+        app:layout_constraintTop_toBottomOf="@id/text_total_score"
+        app:layout_constraintLeft_toRightOf="@id/text_age"
+        />
+    <TextView
+        android:id="@+id/text_edu"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Education"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/text_age"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_edu_score"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_view_round"
+        android:text="161"
+        android:textSize="20dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_edu"
+        app:layout_constraintTop_toBottomOf="@id/text_age_score"
+        app:layout_constraintLeft_toRightOf="@id/text_edu"
+        />
+    <TextView
+        android:id="@+id/text_language"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Language"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/text_edu"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_language_score"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_view_round"
+        android:text="122"
+        android:textSize="20dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_language"
+        app:layout_constraintTop_toBottomOf="@id/text_edu_score"
+        app:layout_constraintLeft_toRightOf="@id/text_edu"
+        />
+    <TextView
+        android:id="@+id/text_exp"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Experience"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/text_language"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_exp_score"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_view_round"
+        android:text="90"
+        android:textSize="20dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_exp"
+        app:layout_constraintTop_toBottomOf="@id/text_language_score"
+        app:layout_constraintLeft_toRightOf="@id/text_exp"
+        />
+    <TextView
+        android:id="@+id/text_additional"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Additional"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/text_exp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_additional_score"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_view_round"
+        android:text="50"
+        android:textSize="20dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_additional"
+        app:layout_constraintTop_toBottomOf="@id/text_exp_score"
+        app:layout_constraintLeft_toRightOf="@id/text_additional"
+        />
+
+    <Button
+        android:id="@+id/btn_single"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Single"
+        android:textSize="16dp"
+
+        app:layout_constraintTop_toBottomOf="@id/text_additional"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_married"
+
+        />
+
+    <Button
+        android:id="@+id/btn_married"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Married"
+        android:textSize="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_single"
+        app:layout_constraintTop_toBottomOf="@id/text_additional_score"
+
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
