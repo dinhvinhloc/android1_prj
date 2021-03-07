@@ -8,6 +8,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -19,6 +20,7 @@ import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -52,4 +54,13 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen(GravityCompat.START)){
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
 }
